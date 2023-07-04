@@ -1,0 +1,689 @@
+:root {
+    --primary: #a7a784;
+    --bg: rgb(224, 224, 224);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #222121;
+    
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(242, 238, 238, 0.8);
+    border-bottom: 1px solid #ffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px 
+    rgba(1, 1, 1, 1);
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+    color: #413131;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #000;
+    transform: scaleX(0);  
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-plus a{
+    color: #181818;
+    margin: 0 0.5rem;
+}
+.navbar .navbar-plus a:hover{
+    color: var(--primary);
+}
+
+#menu{
+    display: none;   
+}
+
+/* hero ---------------------------------------------------*/
+.hero1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, 
+    rgba(224, 224, 224, 1) 0.1%, 
+    rgba(0, 0, 0, 0) 40%);
+}
+
+
+.hero1 .content{
+    padding: 10rem 7%;
+    max-width: 60rem;
+}
+
+.hero1 .content h1{
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px 
+    rgba(1, 1, 1, 1);
+    line-height: 1.1;
+}
+.hero1 .content h1 span{
+    color: var(--primary);
+}
+
+.hero1 .content p{
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px 
+    rgba(1, 1, 1, 1);
+}
+
+
+/* makanan----------------------------------------- */
+.Makanan, .kontak{
+    padding: 8rem 7% 1.4rem;
+    transition: 0.5s linear;
+}
+.Makanan h2, .kontak h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+.kontak p{
+    font-size: 1.1rem;
+
+}
+
+
+/* jagung titi-------------------------------------- */
+.Makanan .row{
+    display: flex;
+}
+.Makanan .row .makanan-img {
+    flex: 0 1 30rem;
+}
+.Makanan .row .makanan-img img{
+    width: 100%;
+}
+.Makanan .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row .content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row .content h3 span{
+    color: var(--primary);
+}
+.Makanan .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    
+}
+.Makanan .row .makanan-img img{ 
+    border-radius: 3%; 
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+
+
+
+/* jagung bose-------------------------------------- */
+.Makanan .row1{
+    display: flex;
+}
+.Makanan .row1 .makanan-img1 {
+    flex: 0 1 30rem;
+}
+.Makanan .row1 .makanan-img1 img{
+    width: 100%;
+}
+.Makanan .row1 .content1{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row1 .content1 h3{
+    
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row1 .content1 h3 span{
+    color: var(--primary);
+}
+.Makanan .row1 .content1 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Makanan .row1 .makanan-img1 img{ 
+    border-radius: 3%; 
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+
+/* katemak ------------ */
+.Makanan .row2{
+    display: flex;
+}
+.Makanan .row2 .makanan-img2 {
+    flex: 0 1 30rem;
+}
+.Makanan .row2 .makanan-img2 img{
+    width: 100%;
+}
+.Makanan .row2 .content2{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row2 .content2 h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row2 .content2 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Makanan .row2 .makanan-img2 img{ 
+    border-radius: 3%; 
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+
+/* Nasi Bambu --------------*/
+.Makanan .row3{
+    display: flex;
+}
+.Makanan .row3 .makanan-img3 {
+    flex: 0 1 30rem;
+}
+.Makanan .row3 .makanan-img3 img{
+    width: 100%;
+}
+.Makanan .row3 .content3{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row3 .content3 h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row3 .content3 h3 span{
+    color: var(--primary);
+}
+.Makanan .row3 .content3 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Makanan .row3 .makanan-img3 img{ 
+    border-radius: 3%;
+    margin-bottom: 30px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+
+/* ohu ai pungan------------ */
+.Makanan .row4{
+    display: flex;
+}
+.Makanan .row4 .makanan-img4 {
+    flex: 0 1 30rem;
+}
+.Makanan .row4 .makanan-img4 img{
+    width: 100%;
+}
+.Makanan .row4 .content4{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row4 .content4 h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row4 .content4 h3 span{
+    color: var(--primary);
+}
+.Makanan .row4 .content4 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Makanan .row4 .makanan-img4 img{ 
+    border-radius: 3%; 
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+
+/* rumpu rampe -------------------*/
+.Makanan .row5{
+    display: flex;
+}
+.Makanan .row5 .makanan-img5 {
+    flex: 0 1 30rem;
+}
+.Makanan .row5 .makanan-img5 img{
+    width: 100%;
+}
+.Makanan .row5 .content5{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row5 .content5 h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row5 .content5 h3 span{
+    color: var(--primary);
+}
+.Makanan .row5 .content5 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Makanan .row5 .makanan-img5 img{ 
+    border-radius: 3%; 
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+
+/* se'i sapi ---------------------------------------- */
+.Makanan .row6{
+    display: flex;
+}
+.Makanan .row6 .makanan-img6 {
+    flex: 0 1 30rem;
+}
+.Makanan .row6 .makanan-img6 img{
+    width: 100%;
+}
+.Makanan .row6 .content6{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.Makanan .row6 .content6 h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Makanan .row6 .content6 h3 span{
+    color: var(--primary);
+}
+.Makanan .row6 .content6 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Makanan .row6 .makanan-img6 img{ 
+    border-radius: 3%; 
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 100);
+}
+
+
+/* Footer--------------- */
+footer{
+    background-color: #000;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+footer .sosial{
+    padding: 1rem 0;
+    
+}
+footer .sosial a{
+    color: #ffff;
+    margin: 1rem;
+}
+footer .sosial a:hover,
+footer .link a:hover {
+    color: #888888;
+}
+
+footer .link{
+    margin-bottom: 1.7rem;
+}
+footer .link a{
+    color: #ffff;
+    padding: 0.7rem 1rem;
+}
+
+
+
+/* responsif -------------------------------------------*/
+/* laptop */
+@media (max-width: 1366px ){
+    html{
+        font-size: 75%;
+    }
+
+    /* Jagung titi */
+    .Makanan .row .makanan-img img{
+        margin-top: 8px;
+    }
+
+    /* jagung bose */
+    .Makanan .row1 .makanan-img1 img{
+        margin-top: 8px;
+    }
+
+    /* katemak */
+    .Makanan .row2 .makanan-img2 img{
+        margin-top: 8px;
+    }
+
+    /* nasi bambu */
+    .Makanan .row3 .makanan-img3 img{
+        margin-top: 8px;
+    }
+
+    /* ohu ai pungan */
+    .Makanan .row4 .makanan-img4 img{
+        margin-top: 8px;
+    }
+
+    /* rumpu rampe */
+    .Makanan .row5 .makanan-img5 img{
+        margin-top: 8px;
+    }
+
+    
+}
+
+
+
+/* tablet ------------------------------------------------------*/
+@media (max-width: 768px ){
+    html{
+        font-size: 62.5%;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #2a2929;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s; 
+    }
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+    .navbar .navbar-nav a{
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.2);
+    }
+    .navbar .navbar-logo{
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+
+
+    /* jagung titi ---------------------*/
+    .Makanan .row{
+        flex-wrap: wrap;
+    }
+    .Makanan .row .makanan-img img{
+        margin-bottom: 0.1px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row .content{
+        padding: 0;   
+    }
+    .Makanan .row .content h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row .content p{
+        font-size: 1.6rem;
+    }
+
+
+
+    /* jagung bose ----------------------*/
+    .Makanan .row1{
+        flex-wrap: wrap;
+    }
+    .Makanan .row1 .makanan-img1 img{
+        margin-top: 40px;
+        margin-bottom: 0.2px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row1 .content1{
+        padding: 0;
+    }
+    .Makanan .row1 .content1 h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row1 .content1 p{
+        font-size: 1.6rem;
+    }
+
+
+
+    /* Katemak ---------------------------- */
+    .Makanan .row2{
+        flex-wrap: wrap;
+    }
+    .Makanan .row2 .makanan-img2 img{
+        margin-top: 40px;
+        margin-bottom: 0.2px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row2 .content2{
+        padding: 0;
+    }
+    .Makanan .row2 .content2 h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row2 .content2 p{
+        font-size: 1.6rem;
+    }
+
+
+
+    /* Nasi Bambu------------------------- */
+    .Makanan .row3{
+        flex-wrap: wrap;
+    }
+    .Makanan .row3 .makanan-img3 img{
+        margin-top: 40px;
+        margin-bottom: 0.2px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row3 .content3{
+        padding: 0;
+    }
+    .Makanan .row3 .content3 h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row3 .content3 p{
+        font-size: 1.6rem;
+    }
+
+
+
+    /* ohu ai pungan ----------------*/
+    .Makanan .row4{
+        flex-wrap: wrap;
+    }
+    .Makanan .row4 .makanan-img4 img{
+        margin-top: 40px;
+        margin-bottom: 0.2px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row4 .content4{
+        padding: 0;
+    }
+    .Makanan .row4 .content4 h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row4 .content4 p{
+        font-size: 1.6rem;
+    }
+
+
+
+    /* rumpu rampe ----------------- */
+    .Makanan .row5{
+        flex-wrap: wrap;
+    }
+    .Makanan .row5 .makanan-img5 img{
+        margin-top: 40px;
+        margin-bottom: 0.2px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row5 .content5{
+        padding: 0;
+    }
+    .Makanan .row5 .content5 h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row5 .content5 p{
+        font-size: 1.6rem;
+    }
+
+
+
+    /* se'i sapi ---------------------- */
+    .Makanan .row6{
+        flex-wrap: wrap;
+    }
+    .Makanan .row6 .makanan-img6 img{
+        margin-top: 40px;
+        margin-bottom: 0.1px;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Makanan .row6 .content6{
+        padding: 0;   
+    }
+    .Makanan .row6 .content6 h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Makanan .row6 .content6 p{
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+/* hp ----------------------------------------------------*/
+@media (max-width: 451px ){
+    html{
+        font-size: 50%;
+    }
+    
+}
